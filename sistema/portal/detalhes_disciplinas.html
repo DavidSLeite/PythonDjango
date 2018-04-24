@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>FDB - Detalhes Disciplinas</title>
+		{% load staticfiles %}
+		<link  rel = "shortcut icon"  type = "imagem/png" href = "{% static 'img/favicon.png' files %}" > 
+		<link rel="stylesheet" type="text/css" href="{% static 'css/normalize.css' files %}">
+		<link rel="stylesheet" type="text/css" href="{% static 'css/estilo.css' files %}" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<header>
+			<nav id="navegacao">
+				<div id="area">
+					<img src="{% static 'img/logo.jpg' files %}">
+					<div id="menu">
+						<a href="/">Home</a>
+						<a href="/alunos">Aluno</a>
+						<a href="/detalhes_disciplinas">Disciplina</a>
+						<a href="/nova_disciplina">Cadastro de Disciplina</a>
+						<a href="/atividades">Cadastro de Atividades</a>
+						<a href="/login">Login</a>
+					</div>
+				</div>
+				
+			</nav>
+		</header>
+		
+		<div id="conteudo">
+
+	<!----------------------------------------------------------------------------------------------->
+			<div class="disciplina">
+				<h2 >Banco de dados</h2>
+				<span>Inicio em em 10/02/2018</span>
+				<img class="img-index" src="{% static 'img/Curso-BD.png' files %}">
+				<p>O curso é ideal tanto para quem deseja atuar na área de administração e gerenciamento de Banco de Dados 
+				quanto para quem já atua e quer ter uma formação superior na área, 
+				buscando mais conhecimento para aprimoramento e crescimento no setor.</p>
+			</div>
+
+			<div class="disciplina">
+				<h2 >Análise e Desenvolvimento de Sistemas</h2>
+				<span>Inicio em em 10/02/2018</span>
+				<img class="img-index" src="{% static 'img/Curso-ADS.png' files %}">
+				<p>O curso é voltado para a criação de programas, softwares e sistemas para as empresas. As etapas do 
+				projeto de sistemas de software, como análise, projeto, teste, gestão, implantação e manutenção de sistemas de 
+				informação também estão entre os aprendizados da graduação.</p>
+			</div>
+			
+			<div class="disciplina">
+				<h2 >Redes de Computadores</h2>
+				<span>Inicio em em 10/02/2018</span>
+				<img class="img-index" src="{% static 'img/Curso-RD.png' files %}">
+				<p>Cada vez mais as empresas precisam lidar com diferentes tipos de redes, como Wi-Fi, intranet, dispositivos móveis conectados, entre outros. 
+				Com o curso de Redes de Computadores, o aluno estará preparado para analisar, projetar, instalar e 
+				administrar soluções para sistemas eficientes e seguros em projetos de redes locais e de longa distância.</p>
+			</div>
+	<!----------------------------------------------------------------------------------------------->		
+
+		</div>
+		
+		<footer>
+			<h2 class="rodape">©2018 - FBD - Todos os direitos reservados - Termos de Uso e Política de Privacidade</h2>
+		</footer>
+	</body>
+</html>
